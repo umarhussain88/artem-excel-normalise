@@ -1,0 +1,11 @@
+2021-12-15 20:55:34,998 - INFO:__main__:Starting normalization process
+2021-12-15 20:55:40,996 - INFO:__main__:Found file: /home/umarh/artem_excel/files/raw/unprocessed/SOURCE.xls
+2021-12-15 20:55:42,747 - INFO:__main__:Renamed file: SOURCE -> 2021-12-15_SOURCE.xls
+2021-12-15 20:55:48,389 - INFO:__main__:Normalizing data for file: 2021-12-15_SOURCE.xls
+2021-12-15 20:56:10,403 - INFO:__main__:Starting normalization process
+2021-12-15 20:56:30,449 - INFO:__main__:Starting normalization process
+2021-12-15 20:56:32,556 - INFO:__main__:Found file: /home/umarh/artem_excel/files/raw/unprocessed/SOURCE.xls
+2021-12-15 20:56:33,668 - INFO:__main__:Renamed file: SOURCE -> 2021-12-15_SOURCE.xls
+2021-12-15 20:56:37,674 - INFO:__main__:Normalizing data for file: 2021-12-15_SOURCE.xls
+2021-12-15 20:57:25,347 - INFO:__main__:Starting normalization process
+2021-12-15 20:57:56,973 - INFO:__main__:Finished
