@@ -29,37 +29,61 @@ sort_col = {
 
 formatter = logging.Formatter('%(asctime)s - %(levelname)s:%(name)s:%(message)s')
 
-file_handler = logging.FileHandler('app.log')
+file_handler = logging.FileHandler('app.log', mode='w')
 file_handler.setFormatter(formatter)
+
 
 logger.addHandler(file_handler)
 
 
-
 def get_excel_files(path):
+
+    if not Path(path).is_dir():
+        logger.error(f"{path} is not a directory")
+        raise Exception(f"{path} is not a directory")
     excel_files = []
     for file in Path(path).glob('*.xls*'):
         excel_files.append(file)
         logger.info(f"Found file: {file}")
-    return excel_files
+    if excel_files:
+        return excel_files
+    else:
+        logger.error("No excel files found")
+        raise Exception("No excel files found")
+
 
 def add_iso_date(file : Path):
-    file_name = f"{pd.Timestamp(file.stat().st_ctime,unit='s').strftime('%Y-%m-%d')}_{file.stem}{file.suffix}"
+
+    dt_df = pd.read_excel(file,nrows=1,header=None)
+    if dt_df[0].str.contains("Date").any():
+        dt = pd.to_datetime(dt_df[0].str.split('Date :',expand=True)[1]).dt.strftime('%Y-%m-%d_%H-%M-%S')[0]
+    else:
+        #add ctime from pathlib object
+        logger.warning(f"No date found in {file} - using create time of file.")
+        dt = pd.Timestamp(file.stat().st_ctime , unit='s')
+
+    file_name = f"{dt}_{file.stem}{file.suffix}"
+
     file.rename(file.parent.parent.joinpath('processed',file_name))
     logger.info(f"Renamed file: {file.stem} -> {file_name}")
     return file_name
 
 
 
-def normalize_data(file : str):
+def normalize_data(file : Path):
 
     logger.info(f"Normalizing data for file: {file}")
-    df = pd.read_excel(file,engine='xlrd',header=None,skiprows=388)
-    #company names is always two rows before Year.
+    start_df = pd.read_excel(file,engine='xlrd',nrows=5000,header=None)
+    start_row = start_df[start_df[0].str.contains('Year')==True].index[1] - 5 #the first company names is usually 4-5 rows before the columns.
+
+    df = pd.read_excel(file,engine='xlrd',header=None,skiprows=start_row)
+    #company names is always four rows before Year.
     df['company'] = df.loc[df.loc[(df[0].str.contains('Year',case=False)==True)].index - 4 ][1]
     df['company'] = df['company'].ffill().bfill()
 
     df1 = df.set_index((df[0].str.contains('Year',case=False)).cumsum().ffill(),append=True).copy()
+    #initlaise a dictionary with the index as the key and value as the table. 
+    #1,2,3 represent Columns B,C,D respectively.
     dfs = {x : frame.dropna(subset=[1,2,3,'company'],how='all').reset_index(drop=True).dropna(how='all',axis=1) for x,frame in df1.groupby(level=1)}
 
     cleaned_frames = {}
@@ -116,10 +140,11 @@ def normalize_data(file : str):
     final.index.names = ['idx','index_row']
     final = final.sort_values(['idx','ValueType'])
 
-    fp = f"{pd.Timestamp('now').strftime('%Y-%m-%d')}_oildata.xlsx"
-    file.parent.parent.joinpath('curated',fp)
-    logger.info(f"Saving normalized data to: {file}")
-    final.to_excel(file,index=False)
+    fp = f"{pd.Timestamp('now').strftime('%Y-%m-%d_%H_%M_%S')}_oildata.xlsx" # if dealing with multiple files.
+    trg_path = file.parent.parent.parent.joinpath('curated',fp)
+    logger.info(f"Saving normalized data to: {file}") 
+
+    final.to_excel(trg_path,index=False)
 
 
 
@@ -127,7 +152,7 @@ if __name__ == "__main__":
     logger.info("Starting normalization process")
     f = Path(__file__).parent.parent.joinpath('files/raw/unprocessed')
     files = get_excel_files(f)
-    files = [add_iso_date(x) for x in files]
     for file in files:
         normalize_data(file)
+    files = [add_iso_date(x) for x in files]
     logger.info("Finished")

@@ -1,11 +1,77 @@
-2021-12-15 20:55:34,998 - INFO:__main__:Starting normalization process
-2021-12-15 20:55:40,996 - INFO:__main__:Found file: /home/umarh/artem_excel/files/raw/unprocessed/SOURCE.xls
-2021-12-15 20:55:42,747 - INFO:__main__:Renamed file: SOURCE -> 2021-12-15_SOURCE.xls
-2021-12-15 20:55:48,389 - INFO:__main__:Normalizing data for file: 2021-12-15_SOURCE.xls
-2021-12-15 20:56:10,403 - INFO:__main__:Starting normalization process
-2021-12-15 20:56:30,449 - INFO:__main__:Starting normalization process
-2021-12-15 20:56:32,556 - INFO:__main__:Found file: /home/umarh/artem_excel/files/raw/unprocessed/SOURCE.xls
-2021-12-15 20:56:33,668 - INFO:__main__:Renamed file: SOURCE -> 2021-12-15_SOURCE.xls
-2021-12-15 20:56:37,674 - INFO:__main__:Normalizing data for file: 2021-12-15_SOURCE.xls
-2021-12-15 20:57:25,347 - INFO:__main__:Starting normalization process
-2021-12-15 20:57:56,973 - INFO:__main__:Finished
+2021-12-16 10:26:36,956 - INFO:__main__:Starting normalization process
+2021-12-16 10:26:36,956 - INFO:__main__:Found file: files/raw/unprocessed/SOURCE.xls
+2021-12-16 10:26:36,956 - INFO:__main__:Normalizing data for file: files/raw/unprocessed/SOURCE.xls
+2021-12-16 10:26:39,626 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 44153)
+2021-12-16 10:26:39,836 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45783)
+2021-12-16 10:26:40,044 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45784)
+2021-12-16 10:26:40,247 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45786)
+2021-12-16 10:26:40,453 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45787)
+2021-12-16 10:26:40,660 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45789)
+2021-12-16 10:26:40,864 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45790)
+2021-12-16 10:26:40,971 - INFO:__main__:Normalized data for case type: BASEBALL CAP FEDERAL COM (API 45793)
+2021-12-16 10:26:41,154 - INFO:__main__:Normalized data for case type: BATTLE AXE FEDERAL COM
+2021-12-16 10:26:41,209 - INFO:__main__:Normalized data for case type: BURTON 35 1 - 1
+2021-12-16 10:26:41,418 - INFO:__main__:Normalized data for case type: COLUMBUS FEDERAL COM (API 43689)
+2021-12-16 10:26:41,628 - INFO:__main__:Normalized data for case type: COLUMBUS FEDERAL COM (API 43693)
+2021-12-16 10:26:41,831 - INFO:__main__:Normalized data for case type: COLUMBUS FEE (API 43489)
+2021-12-16 10:26:42,042 - INFO:__main__:Normalized data for case type: COLUMBUS FEE (API 43490)
+2021-12-16 10:26:42,246 - INFO:__main__:Normalized data for case type: COLUMBUS FEE (UPPER AVALON)
+2021-12-16 10:26:42,413 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 40211)
+2021-12-16 10:26:42,582 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44705)
+2021-12-16 10:26:42,775 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44713)
+2021-12-16 10:26:42,979 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44714)
+2021-12-16 10:26:43,190 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44732)
+2021-12-16 10:26:43,379 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44743)
+2021-12-16 10:26:43,583 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44744)
+2021-12-16 10:26:43,725 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44747)
+2021-12-16 10:26:43,921 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44748)
+2021-12-16 10:26:44,096 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44814)
+2021-12-16 10:26:44,263 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44815)
+2021-12-16 10:26:44,413 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL (API 44816)
+2021-12-16 10:26:44,595 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44712)
+2021-12-16 10:26:44,768 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44715)
+2021-12-16 10:26:44,947 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44716)
+2021-12-16 10:26:45,108 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44717)
+2021-12-16 10:26:45,295 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44728)
+2021-12-16 10:26:45,486 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44729)
+2021-12-16 10:26:45,661 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44730)
+2021-12-16 10:26:45,802 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44731)
+2021-12-16 10:26:45,969 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44741)
+2021-12-16 10:26:46,135 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44742)
+2021-12-16 10:26:46,341 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44745)
+2021-12-16 10:26:46,539 - INFO:__main__:Normalized data for case type: DOMINATOR 25 FEDERAL COM (API 44746)
+2021-12-16 10:26:46,746 - INFO:__main__:Normalized data for case type: JACINTO FEDERAL COM
+2021-12-16 10:26:46,952 - INFO:__main__:Normalized data for case type: MONET FEDERAL COM (API 42763)
+2021-12-16 10:26:47,155 - INFO:__main__:Normalized data for case type: MONET FEDERAL COM (API 42765)
+2021-12-16 10:26:47,254 - INFO:__main__:Normalized data for case type: MONET FEDERAL COM (API 42766)
+2021-12-16 10:26:47,457 - INFO:__main__:Normalized data for case type: MONET FEDERAL COM (API 42767)
+2021-12-16 10:26:47,614 - INFO:__main__:Normalized data for case type: RED BULL 3 FEDERAL 1 - 1
+2021-12-16 10:26:47,770 - INFO:__main__:Normalized data for case type: RED BULL 35 FEDERAL
+2021-12-16 10:26:47,980 - INFO:__main__:Normalized data for case type: TIGERCAT FEDERAL COM (API 44302)
+2021-12-16 10:26:48,196 - INFO:__main__:Normalized data for case type: TIGERCAT FEDERAL COM (API 44303)
+2021-12-16 10:26:48,404 - INFO:__main__:Normalized data for case type: TIGERCAT FEDERAL COM (API 44535)
+2021-12-16 10:26:48,615 - INFO:__main__:Normalized data for case type: TIGERCAT FEDERAL COM (WC)
+2021-12-16 10:26:48,819 - INFO:__main__:Normalized data for case type: VALOR FEDERAL COM 704H
+2021-12-16 10:26:49,031 - INFO:__main__:Normalized data for case type: VALOR FEDERAL COM 706H
+2021-12-16 10:26:49,240 - INFO:__main__:Normalized data for case type: VALOR FEDERAL COM 707H
+2021-12-16 10:26:49,446 - INFO:__main__:Normalized data for case type: VALOR FEDERAL COM 708H
+2021-12-16 10:26:49,657 - INFO:__main__:Normalized data for case type: VALOR FEDERAL COM 803H
+2021-12-16 10:26:49,864 - INFO:__main__:Normalized data for case type: VALOR STATE COM 801H
+2021-12-16 10:26:49,900 - INFO:__main__:Normalized data for case type: VAST STATE (API 42942)
+2021-12-16 10:26:50,006 - INFO:__main__:Normalized data for case type: VAST STATE (API 42943)
+2021-12-16 10:26:50,214 - INFO:__main__:Normalized data for case type: VAST STATE (API 42945)
+2021-12-16 10:26:50,420 - INFO:__main__:Normalized data for case type: VAST STATE (API 42946)
+2021-12-16 10:26:50,527 - INFO:__main__:Normalized data for case type: VAST STATE (API 43545)
+2021-12-16 10:26:50,709 - INFO:__main__:Normalized data for case type: VAST STATE (API 43546)
+2021-12-16 10:26:50,915 - INFO:__main__:Normalized data for case type: VAST STATE (API 43547)
+2021-12-16 10:26:51,020 - INFO:__main__:Normalized data for case type: VAST STATE (API 43550)
+2021-12-16 10:26:51,211 - INFO:__main__:Normalized data for case type: VAST STATE (API 43551)
+2021-12-16 10:26:51,414 - INFO:__main__:Normalized data for case type: VAST STATE (API 43552)
+2021-12-16 10:26:51,629 - INFO:__main__:Normalized data for case type: VAST STATE (API 43655)
+2021-12-16 10:26:51,836 - INFO:__main__:Normalized data for case type: ZACH 17 8 W0MD FEDERAL
+2021-12-16 10:26:52,020 - INFO:__main__:Normalized data for case type: ZACH 17 8 W1MD FEDERAL COM
+2021-12-16 10:26:52,202 - INFO:__main__:Normalized data for case type: ZACH 17 8 W1NC FEDERAL
+2021-12-16 10:26:52,380 - INFO:__main__:Normalized data for case type: ZACH 17 W0NC FEDERAL
+2021-12-16 10:26:53,385 - INFO:__main__:Saving normalized data to: files/raw/unprocessed/SOURCE.xls
+2021-12-16 10:27:03,885 - INFO:__main__:Renamed file: SOURCE -> 2021-12-14_15-24-06_SOURCE.xls
+2021-12-16 10:27:03,885 - INFO:__main__:Finished
