@@ -16,4 +16,8 @@ A custom sort was required for the ValueType column so I used pd.Categorical her
 column names were parsed for each table by splitting by a new line return. The unit measurement always appeared last so slicing
 the last element worked well here.
 
+I also added a raw/processed & unprocessed folder for audit purposes
 
+a curated folder with a timestamp with the output.
+
+and a basic logger to catch basic errors.
